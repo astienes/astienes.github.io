@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> lab13 Greeting Card ACS </title>
+<meta charset= "utf-8">
+<!--Lab 13 GreetingCard Ava Stienes-->
+<style>
+h1{font-size:30pt;text-decoration:underline;font-family:cursive;text-align:center;}
+
+
+body{background-color:maroon;}
+
+#whaaaaat{width:800px; background-color: antiquewhite;}
+
+
+
+
+#eep1{position:absolute;left:0px;top:150px;width:350px;padding:5px;text-align:center;border:5px solid antiquewhite;background-color:antiquewhite;}
+#eep2{position:absolute;left:450px;top:500px;width:350px;padding:5px;text-align:center;border:5px solid antiquewhite;background-color:antiquewhite}
+
+#cocky1{position:absolute;left:400px;top:150px;padding:5px;text-align:center;border:5px solid antiquewhite;}
+#cocky2{position:absolute;left:0px;top:500px;padding:5px;text-align:center;border:5px solid antiquewhite;}
+
+</style>
+
+<script>
+
+function slideshow(){document.getElementById("cocky1").src=document.getElementById("cocky2").src;}
+
+function slideshowz(){document.getElementById("cocky2").src=document.getElementById("cocky1").src;}
+
+</script>
+</head>
+<body>
+<div id="whaaaaat">
+<h1> Greetings from the Land of the Gamecocks! </h1>
+
+<img id="cocky1" onmouseover="slideshow()" onmouseout="slideshowz()" src="cockylookingrough.jpg" alt="vintage cocky" height="300" width="400" >
+<img id="cocky2" onmouseover="slideshowz()" src="welovecocky.jpg" alt="cocky 2" height="300" width="400">
+        
+ 
+
+
+
+<div class="uno">
+<p id="eep1">
+Greetings from the Land of the Gamecocks: Columbia, South Carolina (or,as some may call, it, the <em> City of Dreams</em>). Four score and seven years (or, 3 months) ago, I packed my bags and left the north for this wonderful paradise. I immediately set out to explore all that the city has to offer--from the wonderful institution of Shiv's, across from the Honors Dorm, to the iconic Williams-Brice Stadium, located a convinient 45 minute walk away from campus across train tracks and highways. I quickly realized some very important things: one, Columbia drivers operate their vehicles like they are blindfolded, two, southern hospitality is in fact a real thing, and three, you cannot walk while talking on the phone, because you will trip on the bricks on the horseshoe and embarass yourself.
+
+</p>
+<p id="eep2">
+Columbia definitely has its ups and downs. One of my favorite things about it has got to be the Soda City Market, which has food, clothes, art, and, most importantly, DOGS. Other areas of the city to check out include Five Points (if you like people chasing you at night) and the Thomas Cooper Library, of which I am too frequent of a visitor. If you're ever near the Honors Dorm, I recommend getting coffee or boba at The Corner Blend. Don't worry about trying to fit in dinner at Honeycomb Cafe, though--I'd go to Fresh Greene's or Community Table (affectionately nicknamed ComTab) instead. Oh, and of course, don't forget to visit the Cocky statue for good luck.
+</p>
+
+</div>
+
+</div>
+</body>
+</html>
